@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Some Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <h1>Portfolio</h1>
+
+        <ul class="tab">
+            <li class="sites"><span><a href="index.html">MAIN</a></span></li>
+            <li class="sites"><span> <a href="info.html">INFO</a></span> </li>
+            <li class="sites"><span> <a href="blog.html">BLOG</a></span></li>
+            <li class="sites"><span> <a href="contact.html">CONTACT ME</a></span></li>
+            <li>
+                <div class="toggle_btn">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle-label">
+                        <span class="toggle-ball"></span>
+
+                    </label>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- main -->
+
+    <!-- Script -->
+    <script>
+        const toggle_btn = document.querySelector('#checkbox')
+        console.log(toggle_btn)
+        toggle_btn.addEventListener('change', () => {
+            if (toggle_btn.checked) {
+                console.log('toggle_btn-checked')
+                document.body.classList.add('dark-mode')
+
+            }
+            else {
+                console.log('toggle_btn-un-checked')
+                document.body.classList.remove('dark-mode')
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

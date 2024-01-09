@@ -1,0 +1,12 @@
+@media screen and (width: 1080px) and (height: 2340px) {
+    /* body{
+    background-color: red;
+    } */
+    .tab {
+        list-style: none;
+        margin-left: 30px;
+        display: flex;
+        flex: content;
+        transform: translateX(70%) translateY(12px);
+    }
+}

@@ -1,0 +1,371 @@
+/*---------------------------------
+-------Dark mode styles-------------
+-------------------------------------*/
+:root .dark-mode {
+    --bg-main: rgb(41, 4, 4);
+    --bg-primary: #f18585;
+}
+
+/* body .dark-mode{
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+} */
+
+/* --------Header------ */
+
+.dark-mode .header {
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+    display: flex;
+
+    border-bottom: solid rgb(219, 11, 11);
+    flex: content;
+}
+
+.dark-mode .header h1 {
+    background-color: var(--bg-main);
+}
+
+.dark-mode.tab {
+    list-style: none;
+    margin-left: 30px;
+    display: flex;
+    flex: content;
+}
+
+.dark-mode.tab li {
+    margin-left: 23px;
+}
+
+.dark-mode.tab span {
+    cursor: pointer;
+}
+
+.dark-mode.tab a {
+    text-decoration: none;
+    border: 2px solid grey;
+    color: var(--bg-primary);
+}
+
+.dark-mode.tab a:hover {
+    border-bottom: solid rgb(64, 58, 58);
+    color: var(--bg-main);
+    transition: 0.3s ease-in;
+    background-color: var(--bg-primary);
+}
+
+
+/* ----Card(dark-mode)---- */
+.dark-mode img {
+    height: em;
+    width: 5em;
+    border-radius: 7px 6px 15px;
+    position: centre;
+}
+
+.dark-mode.card {
+    width: 85em;
+    height: 32em;
+    /* background:#0000;
+    transition: 1s ease-in-out; */
+    color: var(--bg-main);
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 11em 20em 0em;
+}
+
+.card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 7em;
+
+}
+
+.card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.9em;
+    margin: 1em;
+
+}
+
+.dark-mode img {
+    height: 11em;
+    width: 10em;
+    border-radius: 21px 21px 21px;
+    position: centre;
+    filter: drop-shadow(3px 0px 3px brown);
+}
+
+.dark-mode .card .img {
+    /* object-fit: unset; */
+    height: 7em;
+    width: 7em;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+
+/* .dark-mode .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.dark-mode .card a {
+    color: white;
+    transition: .4s ease-in-out;
+} */
+
+/* .card a:hover {
+/* color: red; 
+
+
+.dark-mode .card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    background: var(--bg-main);
+    color: var(--bg-primary);
+    transition: .4s ease-in-out;
+}
+
+.dark-mode .card button:hover {
+    background: var(--bg-main);
+    color: var(--bg-primary);
+    cursor: pointer;
+}
+
+
+
+.dark-mode .share path:hover {
+    background: rgb(168, 66, 66);
+    color: rgb(216, 77, 77);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.dark-mode .share svg {
+    height: 28px;
+    width: 27.5px
+}
+
+.dark-mode .share svg.youtube :hover {
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.dark-mode .share svg.instagram :hover {
+    color: rgb(144, 21, 205);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.dark-mode .share svg.twitter :hover {
+    color: rgb(38, 38, 149);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.dark-mode .share svg.github :hover {
+    color: rgb(205, 95, 17);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+
+
+
+
+
+/*---------------------------------
+-------Light mode styles-------------
+-------------------------------------*/
+:root {
+    --bg-main: #ECF2FF;
+    --bg-primary: #1A1110;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--bg-p);
+}
+
+/* ----Header------ */
+.header {
+    background-color: rgb(234, 233, 233);
+    display: flex;
+    border-bottom: solid rgb(219, 11, 11);
+    flex: content;
+    justify-content: space-between;
+}
+
+
+
+.tab {
+    list-style: none;
+    margin-left: 135px;
+    display: flex;
+    /* flex: content; */
+
+    /* flex-direction: row;*/
+}
+
+.tab li {
+    margin: auto;
+    padding-right: 16px;
+}
+
+.tab span {
+    cursor: pointer;
+}
+
+.tab a {
+    text-decoration: none;
+    color: var(--bg-primary);
+    border: 2px solid grey;
+}
+
+.tab a:hover {
+    border-bottom: solid rgb(64, 58, 58);
+    color: var(--bg-main);
+    transition: 0.3s ease-in;
+    background-color: var(--bg-primary);
+}
+
+.toggle_btn {
+    display: flex;
+    flex: content;
+}
+
+#checkbox {
+    visibility: hidden;
+}
+
+#checkbox:checked+.toggle-label .toggle-ball {
+    transform: translateX(2rem);
+    background-color: var(--bg-main);
+}
+
+.toggle-label {
+    width: 6rem;
+    height: 4rem;
+    background-color: var(--bg-primary);
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+    filter: drop-shadow(-1px 1px 4px crimson);
+    transform: translateY(-3px);
+}
+
+.toggle-ball {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--bg-main);
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    transition: all.2s linear;
+    filter: drop-shadow(9px 6px 10px black);
+}
+
+/* ----Card(Light mode)----- */
+/* img {
+    height: 1em;
+    width: 5em;
+    border-radius: 7px 6px 15px;
+    position: centre;
+   
+} */
+
+.card {
+    width: 85em;
+    height: 37em;
+    color: var(--bg-main);
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 2em 0em;
+}
+
+.card span {
+    font-weight: bold;
+    color: var(--bg-primary);
+    text-align: center;
+    display: block;
+    font-size: 4em;
+    background-image: url(download.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card .info {
+    font-weight: lighter;
+    color: var(--bg-primary);
+    display: block;
+    text-align: center;
+    font-size: 1.11em;
+    margin: 1em;
+}
+
+img {
+    height: 11em;
+    width: 10em;
+    border-radius: 21px 21px 21px;
+    position: centre;
+}
+
+.card .img {
+    height: 7em;
+    width: 7em;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.ic-twitter,
+.ic-facebook,
+.ic-youtube {
+    cursor: pointer;
+}
+
+.ic-twitter svg:hover {
+    fill: #1da1f2;
+}
+
+.ic-facebook svg:hover {
+    fill: #1877f2;
+}
+
+.ic-youtube svg:hover {
+    fill: #da1725;
+}
